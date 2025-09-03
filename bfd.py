@@ -1,24 +1,24 @@
+#MEU
+
 tarefas = [] ##teste
 taf_pend = []
 taf_conclu = []
 #escolha = 1
-print("digite 1 para adicionar tarefas:")
-print("digite 2 para listar tarefa como pendente:")
-print("digite 3 para listar tarefa como concluida:")
-print("digite 4 para remover tarefa:")
-print("digite 5 para sair:")
-escolha = int(input("opção:"))
 while(escolha !=5):
-
-    
-    if(escolha>5 or escolha<1):
+ print("digite 1 para adicionar tarefas:")
+ print("digite 2 para listar tarefa como pendente:")
+ print("digite 3 para listar tarefa como concluida:")
+ print("digite 4 para remover tarefa:")
+ print("digite 5 para sair:")
+ escolha = int(input("opção:"))
+if(escolha>5 or escolha<1):
       print("por favor selecione uma das opções!")
-    else:
+else:
      if(escolha==1): #funcao para adicionar
              nt = str(input("tarefa:"))
              tarefas.append(nt)
              print("tarefa adicionada com sucesso!")
-    if(escolha==2):#funcao adicionar pendente
+if(escolha==2):#funcao adicionar pendente
              if(len(tarefas)==0):
                 print("nao possui tarefas!")
              else:
@@ -27,7 +27,7 @@ while(escolha !=5):
                 esc2=int(input("numero da tarefa:"))
                 taf_pend.append(tarefas[esc2 -1])
                 print("tarefa adicionada a pendentes!")        
-    if(escolha==3):#funcao adicionar como concluida
+if(escolha==3):#funcao adicionar como concluida
              if(len(tarefas)==0):
               print("nao possui tarefas!")
              else:
@@ -36,7 +36,7 @@ while(escolha !=5):
                  esc3=int(input("numero da tarefa:"))
                  taf_conclu.append(tarefas[esc3-1])
                  print("tarefa adicionada a concluidas!") 
-    if(escolha==4):#funcao para remover tarefas 
+if(escolha==4):#funcao para remover tarefas 
             if(len(tarefas)==0):
               print("nao possui tarefas!")
             else:
@@ -45,7 +45,7 @@ while(escolha !=5):
               esc4=int(input("numero da tarefa:"))
              tarefas.pop(tarefas[esc4 -1])
              print("tarefa removida com sucesso!")
-    if(escolha==5):#funcao para sair
+if(escolha==5):#funcao para sair
            if(len(tarefas)==0):
              print("nao possui tarefas!")
              break
