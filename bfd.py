@@ -1,4 +1,4 @@
-tarefas = []
+tarefas = [] ##teste
 taf_pend = []
 taf_conclu = []
 escolha = 1
